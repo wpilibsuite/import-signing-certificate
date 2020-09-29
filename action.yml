@@ -1,0 +1,23 @@
+name: 'Xcode Import Certificate'
+description: 'Import a code signing certificate into a keychain'
+inputs:
+  certificate-data:
+    description: 'Base64 encoded certificate in P12 format.'
+    required: false
+  certificate-path:
+    description: 'Path to certificate in P12 format.'
+    required: false
+  certificate-passphrase:
+    description: 'Passphrase to unlock the certificate P12 file. Required and cannot be empty.'
+    required: true
+  keychain-name:
+    description: 'Keychain name'
+    required: true
+  keychain-password:
+    description: 'Keychain password'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+  post: 'dist/index.js'
