@@ -1,0 +1,36 @@
+{
+  "name": "import-signing-certificate",
+  "version": "1.0.0",
+  "description": "GitHub Action to import code signing certificates into a keychain.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+    "test": "jest",
+    "all": "npm run lint && npm run prepare && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devbotsxyz/import-signing-certificate.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "Xcode"
+  ],
+  "author": "Stefan Arentz <stefan@devbots.xyz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devbotsxyz/import-signing-certificate/issues"
+  },
+  "homepage": "https://github.com/devbotsxyz/import-signing-certificate#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "execa": "^4.0.3"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.24.1",
+    "eslint": "^7.4.0",
+    "jest": "^26.4.2"
+  }
+}
