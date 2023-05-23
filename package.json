@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/devbotsxyz/import-signing-certificate#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5",
+    "@actions/core": "^1.10.0",
     "execa": "^4.0.3"
   },
   "devDependencies": {
