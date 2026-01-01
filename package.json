@@ -1,11 +1,11 @@
 {
   "name": "import-signing-certificate",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "GitHub Action to import code signing certificates into a keychain.",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "lint": "eslint .",
-    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+    "lint": "eslint index.mjs",
+    "prepare": "ncc build index.mjs -o dist --source-map --license licenses.txt",
     "test": "jest",
     "all": "npm run lint && npm run prepare && npm run test"
   },
