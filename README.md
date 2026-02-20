@@ -10,7 +10,7 @@ For simple projects where there is one scheme, invoking `xcode-archive` can be a
 
 ```yaml
 - name: "Import Certificate: Development"
-  uses: devbotsxyz/xcode-import-certificate@master
+  uses: wpilibsuite/xcode-import-certificate@main
   with:
     certificate-data: ${{ secrets.DEVELOPMENT_CERTIFICATE_DATA }}
     certificate-passphrase: ${{ secrets.DEVELOPMENT_CERTIFICATE_PASSPHRASE }}

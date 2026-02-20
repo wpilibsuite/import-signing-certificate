@@ -19,11 +19,11 @@
 // SOFTWARE.
 
 
-const fs = require("fs");
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
-const core = require('@actions/core');
-const execa = require('execa');
+import * as core from '@actions/core';
+import {execa} from 'execa';
 
 
 const main = async () => {

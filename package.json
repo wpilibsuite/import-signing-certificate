@@ -1,17 +1,17 @@
 {
   "name": "import-signing-certificate",
-  "version": "1.0.0",
+  "version": "3.0.1",
   "description": "GitHub Action to import code signing certificates into a keychain.",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "lint": "eslint .",
-    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+    "lint": "eslint index.mjs",
+    "prepare": "ncc build index.mjs -o dist --source-map --license licenses.txt",
     "test": "jest",
     "all": "npm run lint && npm run prepare && npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devbotsxyz/import-signing-certificate.git"
+    "url": "git+https://github.com/wpilibsuite/import-signing-certificate.git"
   },
   "keywords": [
     "GitHub",
@@ -21,16 +21,16 @@
   "author": "Stefan Arentz <stefan@devbots.xyz>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devbotsxyz/import-signing-certificate/issues"
+    "url": "https://github.com/wpilibsuite/import-signing-certificate/issues"
   },
-  "homepage": "https://github.com/devbotsxyz/import-signing-certificate#readme",
+  "homepage": "https://github.com/wpilibsuite/import-signing-certificate#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5",
-    "execa": "^4.0.3"
+    "@actions/core": "^2.0.1",
+    "execa": "^9.6.1"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.24.1",
-    "eslint": "^7.4.0",
-    "jest": "^26.4.2"
+    "@vercel/ncc": "^0.38.4",
+    "eslint": "^8.48.0",
+    "jest": "^30.2.0"
   }
 }

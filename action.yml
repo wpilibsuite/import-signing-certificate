@@ -47,5 +47,5 @@ outputs:
     description: 'Keychain name'
 
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: 'node24'
+  main: 'dist/index.mjs'
